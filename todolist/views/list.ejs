@@ -1,0 +1,39 @@
+<!-- base template for our html ; anything valid for html is valid -->
+<!-- cmd shift b beautify -->
+
+<%- include('header'); -%>
+
+        <div class="box" id="heading">
+            <h1>
+                <%= listTitle %></h1>
+        </div>
+
+        <div class="box">
+            <% for(var i=0; i<newListItems.length;i++){ %>
+                <div class="item">
+                    <input type="checkbox">
+                    <p>
+                        <%= newListItems[i]%>
+                    </p>
+                </div>
+            <% } %>
+          
+          
+          <!-- style the forms similarly -->
+          <form action="/" method="POST" class="item">
+              <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+              <button type="submit" name="list" value="<%= listTitle %>"> + </button>
+              <!-- specifying a dynamic value for the button using ejs -->
+          </form>
+  
+          
+
+        </div>
+
+
+
+
+        <!-- <form action="/" method="POST"> <input type="text" name="newItem"> <button
+        type="submit" name="button">Add</button> </form> -->
+
+<%- include('footer'); -%>
