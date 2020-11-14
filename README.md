@@ -12,12 +12,14 @@ An implementation of the simon game with Javascript and Html / Css.
 
 
 ## To do list
-afdafd
+Making a to do list with Html, css, ejs, with a nodejs backend (express as a framework)
 
 
 ## Blog
 
-dfad
+Making a Blog with Html, css, ejs, with a nodejs backend (express as a framework)
+Functions:
+Update posts and share
 
 
 
